@@ -13,12 +13,9 @@ const bot = new TelegramBot(token_bot, { polling: true });
 
 //BOT PRENDIDO
 
-const axios = require("axios");
 const express = require("express");
 const app = express();
-const PDFDocument = require("pdfkit");
-const { DateTime } = require("luxon");
-const moment = require("moment");
+
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
